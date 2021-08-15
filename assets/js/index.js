@@ -35,12 +35,10 @@ if (peremA <= 1 && peremB >= 5) {
 */
 
 /*
-8 Вычислите стоимость покупки (N штук товара по цене P). начислить 2% скидки, если сумма больше 500 грн и 3%, если сумма больше 800грн.
-
 let price = 100
-let sum = prompt('Хот-дог по 100грн. Сколько вы хотите купить?')
-let value = sum * price
-if (value >= 500 && value <= 799) {
+let col = Number(prompt('Хот-дог по 100грн. Сколько вы хотите купить?'))
+let value = col * price
+if (value >= 500 && value < 800) {
   value = value * 0.98
   console.log(`Вы получили скидку в 2%, сумма к оплате: ${value}`)
 } else if (value >= 800) {
